@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean');
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+*{
+    
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body{
+    color:white;
+    overflow-y:hidden;
+}
+.back{
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: url(../img/swan-black.jpg);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.title{ /* ul 메뉴 */
+    width:100%; height:100px;
+    border:1px solid white;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.title li{
+    border:1px solid white;
+    width:200px; height:50px; 
+    color:white;
+    text-align: center;
+    line-height:50px;
+    cursor: pointer;    
+}   
+.title li:hover{
+    font-size:1.15rem;
+    color:rgb(208, 225, 142);
+}
+
+.menu{
+    width:100px;height:50px;
+    border:1px solid rgb(202, 88, 88);
+    /* position:fixed; */
+    margin-top:50px;
+}    
+.menu:hover .sub{
+    display:block;
+}
+.menu p{
+    width:100%; height:100%;
+    /* border:1px solid rgb(202, 88, 88); */
+    text-align: center;
+    line-height: 50px;
+}
+.menu .sub{
+    width:100%; height:100%;
+    border:1px solid rgb(190, 236, 26);
+    display:none;
+}
+.menu .sub li{
+    width:100%; height:40px;
+    line-height: 40px;
+    border:1px solid rgb(32, 7, 101);
+    text-align: center;
+    cursor:pointer;
+}
+.menu .sub li:hover{
+    background:rgb(162, 75, 149);
+}
+/* ---------------------------------------------------------------- */
+section{
+    position: absolute;
+    top:100px; left:0;
+    width:100%; height:900px;
+    border:0px solid red;
+    display:none;
+    overflow:hidden;
+}
+/* ---------------------------------------------------------------- */
+.tip{
+    position:fixed;
+    bottom:200px; right: 0;
+    width: 70px; height: 70px;
+    border:1px solid rgb(227, 232, 152);
+    border-radius:100%;
+}
+.tip:hover div{
+    margin-left:-150px;
+}
+.tip p{
+    width: 100%; height: 100%;
+    /* border:1px solid black; */
+    line-height: 70px;
+    text-align: center;
+}
+.tip div{
+    position:absolute;
+    top:100%;
+    width:300px; height:40px;
+    line-height:40px;
+    /* border:1px solid rgb(103, 158, 198); */
+    margin-left:300px;
+    transition:all 0.5s;
+    text-indent: 10px;
+}
+
+.big{
+    position:fixed;
+    top:200px; left:12%;
+    width:80%; height: 60%;
+    border:1px solid rgb(213, 171, 171);
+}
+.big .big_text1 {
+    position:relative;
+    top:0; left:0;
+    width:500px; height:50px;
+    font-size:2rem;
+    /* text-indent:50px; */
+
+    margin-top:50px;
+    margin-left:50px;
+    /* line-height: 100px; */
+    /* border:1px solid rgb(213, 171, 171); */
+    /* font-family: sans-serif; */
+    cursor: pointer;
+    
+}
+.big .big_img{
+    position:absolute;
+    top:0px; left:100%;
+    width:900px; height: 500px;
+    /* border:1px solid rgb(96, 90, 203); */
+    display:none;
+    
+}
+
+.big .big_img table tr td{
+    /* border:1px solid red; */
+    font-size:1.3rem;
+}
+
+.big .big_img table tr td img{
+    width:100%; height:500px;
+}
+
+/*섹션-1 시작*/
+.back1{
+    position: absolute; top:0; left:0;
+    z-index: -1;
+    width:100%; height:900px;
+    /* border:5px solid red; */
+    background:url(../img/sunglasses.jpg);
+    background-size: 100% 100%;
+    animation:back1_ani 5s;
+}
+@keyframes back1_ani{
+    0%{transform:scale(1.3);}
+    100%{transform:scale(1);}
+}
+
+.sec1_tit{
+    position: absolute;
+    left:100px;
+    width:1000px; height:100px;
+    line-height:100px;
+}
+.sec1_title{
+
+    top:100px; left:100px;
+
+    /* border:3px solid rgb(224, 28, 28); */
+    font-size: 4rem;
+    color:black;
+    font-family:black Han Sans;
+    /* font-family:'SUITE-Regular'; */
+    line-height: 100px;
+    animation:sec1_title_ani 3s;
+    animation-delay:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+
+@keyframes sec1_title_ani{
+    0%{top:150px; opacity:0;}
+    100%{top:100px; opacity:1;}
+}
+.sec2_title{
+
+    top:250px; left:100px;
+    font-size:3rem;
+    color:rgb(29, 72, 191);
+    font-family:black Han Sans;
+    animation:sec2_title_ani 2s;
+    animation-delay:2s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+@keyframes sec2_title_ani{
+    0%{left:200px; opacity:0;}
+    100%{left:100px; opacity:1;}
+}
+
+.back2{
+    position: absolute; top:0; left:0;
+    z-index: -1;
+    width:100%; height:900px;
+    /* border:5px solid red; */
+    background:url(../img/sunset\ sea_1280.jpg);
+    background-size: 100% 100%;
+    animation:back1_ani 5s;
+}
+
+
+.back3{
+    position:absolute; 
+    /* border:5px solid blue; */
+    z-index:-1;
+    width:100%; height:900px;
+    background:url(../img/music-player.jpg);
+    animation:back1_ani 5s;
+}
+.sec3_tit{
+    position:absolute;
+    font-family:black Han Sans;
+    line-height:80px;
+    opacity:0;
+}
+.sec3_title{
+    top:100px; left:100px;
+    /* border:1px solid red; */
+    font-size:4rem;
+    font-family:black Han Sans;
+    animation:sec3_title_ani 1.5s;
+    animation-fill-mode:forwards;
+}
+@keyframes sec3_title_ani{
+    0%{top:150px; opacity:0;}
+    100%{top:100px; opacity:1;}
+}
+.sec2_2_title {
+    top:300px; left:100px;
+    font-size:3rem;
+    color:rgb(143, 50, 21);
+    font-family:black Han Sans;
+    animation:sec2_2_title_ani 1s;
+    animation-delay: 3s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+@keyframes sec2_2_title_ani{
+    0%{left:0px; opacity:0;}
+    100%{left:100px; opacity:1;}
+}
+
+.back4{
+    position:absolute; 
+    /* border:5px solid blue; */
+    z-index:-1;
+    width:1500px; height:900px;
+    background:url(../img/artificial-intelligence_1280.jpg);
+    animation:back1_ani 5s;
+}
+.sec1_4_title{
+
+    top:100px; left:100px;
+
+    /* border:3px solid rgb(224, 28, 28); */
+    font-size: 4rem;
+    color:aliceblue;
+    font-family:black Han Sans;
+    /* font-family:'SUITE-Regular'; */
+    line-height: 100px;
+    animation:sec1_title_ani 3s;
+    animation-delay:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+.sec2_4_title {
+    top:300px; left:100px;
+    font-size:3rem;
+    color:white;
+    font-family:black Han Sans;
+    animation:sec2_2_title_ani 1s;
+    animation-delay: 3s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+
+
+
+
+.sec0{
+    display: block;
+}

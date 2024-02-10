@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/preparing_for_retirement.css">
+</head>
+<script>
+    function func(js) {
+        big_imgid1.style.display = "none";
+        big_imgid2.style.display = "none";
+        big_imgid3.style.display = "none";
+        this["big_imgid" + js].style.display = "block";
+    }
+    function func_menu(js) {
+        secid0.style.display = "none";
+        secid1.style.display = "none";
+        secid2.style.display = "none";
+        secid3.style.display = "none";
+        secid4.style.display = "none";
+        secid5.style.display = "none";
+        secid6.style.display = "none";
+        secid7.style.display = "none";
+        secid8.style.display = "none";
+        this["secid" + js].style.display = "block";
+    }
+
+</script>
+
+<body>
+    <div class="back"></div>
+    <ul class="title">
+        <li onclick="func_menu(1)">실버문화의 중요성</li>
+        <li onclick="func_menu(2)">노후를 위한 생활습관</li>
+        <li onclick="func_menu(3)">문화 예술과 창작활동</li>
+        <li onclick="func_menu(4)">디지털 기술의 활용</li>
+        <li onclick="func_menu(5)">지속 가능한 노후 활동</li>
+        <li onclick="func_menu(6)">실버 문화 성공 사례</li>
+        <li onclick="func_menu(7)">지역사회 협력</li>
+        <li onclick="func_menu(8)">가족 및 사회적 지원</li>
+    </ul>
+    <section id="secid0" class="sec0">
+        <div class="menu">
+            <p>메뉴보기</p>
+            <ul class="sub">
+                <li>1</li>
+                <li>2</li>
+                <li>재테크</li>
+                <li>문화</li>
+                <li>활동</li>
+            </ul>
+        </div>
+        <div class="tip">
+            <p>tip</p>
+            <div>
+                새로운 정보를 알려드립니다.
+            </div>
+        </div>
+        <div class="big">
+            <div class="big_text1">
+                <p onclick="func(1)">규칙적인 운동과 활동</p>
+                <div class="big_img" id="big_imgid1">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/dumbbells.jpg" alt="">
+                            </td>
+                            <td>
+                                <p>유산소 운동하기</p>
+                                <p>꾸준한 운동</p>
+                                <p>꾸준한 운동</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p onclick="func(2)">건강한 식습관과 영양 섭취</p>
+                <div class="big_img" id="big_imgid2">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/salad.jpg" alt="">
+                            </td>
+                            <td>
+                                <p>균형잡힌 식사</p>
+                                <p>충분한 영양섭취</p>
+                                <p>규칙적인 식사</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p onclick="func(3)">스트레스 관리</p>
+                <div class="big_img" id="big_imgid3">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="img/meditate.jpg" alt="">
+                            </td>
+                            <td>
+                                <p>명상</p>
+                                <p>심호흡 하기</p>
+                                <p>꾸준한 운동</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="secid1" class="sec1">
+        <div class="back1"></div>
+        <div class="sec1_title sec1_tit">
+            새로운 게임의 왕자
+        </div>
+        <div class="sec2_title sec1_tit">
+            롤오버워치 탄생 개시합니다.<br>
+            지금 바로 신청하세요.
+        </div>
+    </section>
+
+    <section id="secid2" class="sec2">
+        <div class="back2"></div>
+        <div class="sec1_title sec1_tit">
+            석양
+        </div>
+        <div class="sec2_2_title sec1_tit">
+            인정하기<br>
+            열린 사고 갖기
+
+        </div>
+    </section>
+        
+    
+    <section id="secid3" class="sec3">
+        <div class="back3"></div>
+        <div class="sec1_title sec1_tit">
+            예술을 즐기는 법
+        </div>
+        <div class="sec2_title sec1_tit">
+            지자체 문화행사 참석하기<br>
+            문화가 있는 날 확인하기
+        </div>
+    </section>
+    <section id="secid4" class="sec4">
+        <div class="back4"></div>
+        <div class="sec1_4_title sec1_tit">
+            4차 산업
+        </div>
+        <div class="sec2_4_title sec1_tit">
+            디지털 교육 듣기<br>
+            
+    </section>
+    <section id="secid5" class="sec5">메뉴 섹션-5</section>
+    <section id="secid6" class="sec6">메뉴 섹션-6</section>
+    <section id="secid7" class="sec7">메뉴 섹션-7</section>
+    <section id="secid8" class="sec8">메뉴 섹션-8</section>
+</body>
+
+</html>

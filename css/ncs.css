@@ -1,0 +1,205 @@
+*{
+    margin:0;
+}
+.title{
+    border:1px solid black;
+    width:100%; height:70px;
+    background: #0277C4;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 70px;
+}
+.menu{
+    width:100%; height:250px;
+    border:0px solid black;
+    margin-top: 20px;
+}
+.menu div{
+    width:200px; height:100%;
+    border:0px solid green;
+    float:left;
+}
+.menu .left {
+    width:300px;
+}
+.menu .left p{
+    width:100%; height: 50px;
+    border-bottom:1px solid rgb(92, 99, 169);
+    line-height: 50px;
+    text-indent: 20px;
+    cursor: pointer;
+}
+.menu .left p:hover{
+    background-color: black;
+    color:aqua
+}
+.menu .right{
+    position:relative;
+    top:0; left:0;
+    width:700px;
+    border:0px solid red;
+    /* display:none; */
+}
+/* .menu .right .mod1{
+    display:flex;
+} */
+
+.menu .right div{
+    position: absolute;
+    top:0;left:0;
+    width:100%; height:100%;
+    border:0px solid blue;
+    background:white;
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+.menu .right div .icon{
+    width:30%; height:150px;
+    font-size:5rem;
+    border:0px solid #ccc;
+    text-align: center;
+    line-height: 150px;
+    margin-top:20px;
+}
+.menu .right div .icon_text{
+    width:30%; height:40px;
+    border:0px solid blue;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5rem;
+    margin-top:-20px;
+}
+
+
+/* 메뉴(대분류)에서 클릭 후 중분류(아이콘)을 선택하면 상세페이지(소분류) 보이기 */
+.content{
+    position:absolute;
+    top:100px; left:1000px;
+    width:900px; height: 700px;
+    border:1px solid #ccc;
+    background: white;
+    display:none;
+}
+.content .content_title{
+    width:90%; height:70px;
+    border:0px solid red;
+    text-align: center;
+    line-height: 70px;
+    margin:20px auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.content .content_title p{
+    border:0px solid green;
+    width:20%; height:80%;
+    border-radius: 20px;
+    text-align: center;
+    font-size:1.5rem;
+    line-height:60px;
+    cursor:pointer;
+    
+}
+
+.content .content_title p:hover{
+    background:rgb(23, 50, 159);
+    color:white;
+}
+
+
+
+
+
+.content .content15_box{
+    width:90%; height:500px;
+    border:0px solid green;
+    margin:0 auto;
+    display:flex;
+}
+.content15_box div{
+    border:0px solid orange;
+    text-align: center;
+
+}
+.content15_box div:first-child{
+    width:70%;
+}
+.content15_box div:last-child{
+    width:30%;
+}
+.content15_box div img{
+    width: 500px;
+    padding-top: 50px;
+    /* margin-top: 50px; */
+}
+.content15_box div:last-child p{
+    width:80%; height:40px;
+    border:0px solid red;
+    text-align: left;
+    line-height: 40px;
+    margin:10px auto;
+}
+
+
+
+
+
+.content4{
+    display:block;
+}
+.content3 .content3_box {
+    width:100%; height:40px;
+    border:0px solid black;
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-between;
+}
+.content3 .content3_box div{
+    width:20%; height:40px;
+    border:1px solid rgb(32, 141, 74);
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.content3 .content3_box div:hover{
+    background:pink;
+    color:red;
+}
+.content3 .content3_img{
+    width:80%; height:480px;
+    border:0px solid rgb(70, 70, 152);
+    margin:50px auto;
+    background: url(../img/pexels-annika.jpg);
+    background-size: 100% 100%;
+}
+.content3 .content3_img_text{
+    width:50%; height:30px;
+    border:0px solid black;
+    margin:-30px auto;    
+    text-align: center;
+    line-height: 30px;
+}
+
+
+
+
+.content4{
+    background:url(../img/pexels-marta.jpg);
+    background-size: 100% 100%;
+}
+.content5{
+    background:url(../img/frame.png);
+    background-size: 100%;
+}
+.content6{
+    background:url(../img/dandelion.jpg);
+    background-size: auto;
+}
+.content7 .content_title p{
+    border:1px solid black;
+}

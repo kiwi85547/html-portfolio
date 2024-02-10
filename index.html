@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="left">
+            <div class="pic">
+                <img src="img/micky.jpg" alt="">
+            </div>
+            <p class="text1">백엔드 전문가</p>
+            <p class="text2">조화영</p>
+            <p class="text3">Cho Hwa-yeong</p>
+            <p class="menu1 menu" onclick="func(1)">현재 상황</p>
+            <p class="menu2 menu" onclick="func(2)">목표 설정</p>
+            <p class="menu3 menu" onclick="func(3)">나의 강점</p>
+            <p class="menu4 menu" onclick="func(4)">개발 영역</p>
+            <p class="menu5 menu" onclick="func(5)">스킬 계획</p>
+            <p class="menu6 menu" onclick="func(6)">네트워킹 전략</p>
+
+            <p class="text4 left_text">연락처</p>
+            <p class="text5 left_text">010-xxxx-xxxx</p>
+            <p class="text6 left_text">asd@naver.com</p>
+            <p class="text7 left_text">서울시 서대문구</p>
+
+<script>
+    <!-- 내부스크립트 -->
+    function func(js){
+        right1.style.display="none"
+        right2.style.display="none"
+        right3.style.display="none"
+        right4.style.display="none"
+        right5.style.display="none"
+        right6.style.display="none"
+        this["right"+js].style.display="block"
+    }
+
+</script>
+        </div>
+        <!-- 왼쪽 메뉴 클릭시 오른쪽에 데이터 표시 -->
+        <div class="right" id="right1">
+            <p>현재 상황</p>
+            중앙정보처리학원에서 국비지원 K-digital Training을 수강함
+            <p>현재 직업 상황 또는 대학에서의 상황</p>
+            교육직종에 종사하였음. 아이들을 가르치는 일을 하였음
+            대학에서는 기계 관련 학과를 전공하였습니다.
+            <p>강점과 발전 가능성 소개</p>
+            저는 지속적으로 발전하고 성취하는것에 보람을 느낍니다.
+            어려움에 부딪혔을 때 좌절하지 않고 헤쳐나갈 것입니다.
+        </div>
+        <div class="right" id="right2">
+            <p>어떤 직업에 도전할것인가</p>
+            <p>3년, 5년 후 나를 그려보기</p>
+            
+            <p>구체적이고 현실적인 목표 설정</p>
+        </div>
+        
+        <div class="right" id="right3">
+            <p>나의 강점</p>
+            <p>내 강점은 무엇인가</p>
+            나의 강점은 새로운 것을 배우는것에 거부감이 없다는 것이다.
+            <p>강점을 더욱 강화하기 위한 나만의 전략</p>
+            새롭게 배우고 익히며 관련 자격증을 획득하는것이 나의 전략입니다.
+        </div>
+        
+        <div class="right" id="right4">
+            <p>개발 영역</p>
+            <p>현재 산업 동향과 자기 분야에 필요한 기술 습득</p>
+            전문기술자가 부족한 상황입니다.
+            <p>수요가 높은 분야 파악</p>
+            인공지능, 빅데이터
+        </div>
+        
+        <div class="right" id="right5">
+            <p>스킬 계획</p>
+            프론트엔드:html,css,js 백엔드:java 프레임워크:spring,spring boot
+            DB:MySQL
+            <p>필요한 스킬 목록</p>
+            node js. React
+            <p>스킬 개발을 위한 계획 및 일정</p>
+
+            
+        </div>
+        <div class="right" id="right6">
+            <p class="right_text">네트워킹 전략</p>
+            <p class="right_text">어떻게 네트워크를 구축할 것인가?</p>
+            <p class="right_text">인터뷰 및 커리어 박람회 참여 계획</p>
+            
+        </div>
+    </div>
+
+
+</body>
+
+</html>

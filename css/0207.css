@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'SejonghospitalBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/SejonghospitalBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    list-style-type: none;        
+}
+header{
+    width:100%; height:100px;
+    line-height: 100px;
+    border:1px solid black;
+    background-color: black;
+    color:white;
+    font-size: 4rem;
+    text-align: center;
+    text-indent: 100px;
+    font-family: 'SejonghospitalBold';
+}
+.bar {
+    position: relative;
+    top:0; left:0;
+    z-index:99;
+    width: 70px; height:70px;
+    line-height: 70px;
+    border: 1px solid black;
+    float:right;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+nav {
+    position: absolute;
+    top:170px; left:100%;
+    z-index:98;
+    width: 20%; height: 700px;
+    border: 1px solid black;
+    background-color: black;
+
+}
+nav div {
+    width: 80%; height: 50px;
+    border: 1px solid black;
+    border-bottom: 1px dashed rgb(168, 46, 46);
+    margin:50px auto;
+    font-size: 1.5rem;
+    text-align: right;
+    padding-right:20px;
+    color:white;
+    cursor: pointer;
+}
+nav div:hover {
+    background-color: green;
+    border-radius: 20px;
+}
+section {
+    position:relative;
+    top:0; left:0;
+
+    width:100%; height:800px;
+    border:1px solid red;
+
+}
+article {
+    position: absolute;
+    top:0px; left:0px;
+    padding:100px;
+    width:100%; height:100%;
+    background-color: grey;
+
+}
+.at .title {
+    width:1000px; height:70px;
+    border:1px solid blue;
+    line-height: 70px;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-indent: 20px;
+
+}
+.at0 {
+    background :url(../img/sky.jpg);
+    background-size: 100% 100%;
+}
